@@ -1,0 +1,16 @@
+body {
+  background-image: url('/images/bg.jpg');  /* 이미지 경로 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* 투명 오버레이를 주고 싶을 경우 */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.4); /* 흰색 반투명 필터 */
+  z-index: -1;
+}
